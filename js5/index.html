@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js5</title>
+</head>
+<body>
+    <script>
+var salario = parseFloat(prompt("Digite o seu salário:"));
+
+
+var alternativa = prompt("Escolha uma alternativa (A, B ou C):\nA) Acrescentar 10%\nB) Acrescentar 15%\nC) Acrescentar 20%");
+
+
+var novoSalario;
+if (alternativa === "A") {
+    novoSalario = salario * 1.10;
+} else if (alternativa === "B") {
+    novoSalario = salario * 1.15;
+} else if (alternativa === "C") {
+    novoSalario = salario * 1.20;
+} else {
+    alert("Alternativa inválida. Por favor, escolha A, B ou C.");
+}
+
+
+if (novoSalario) {
+    alert("Novo salário: R$" + novoSalario.toFixed(2));
+} else {
+    alert("Programa encerrado.");
+}
+
+    </script>
+</body>
+</html>
